@@ -2,8 +2,8 @@
 
 import random
 
+#Greeting and assign user input to variable
 print("Rock, Paper, Scissors, Shoot!")
-
 user_choice = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
 #print(user_choice)
@@ -22,6 +22,9 @@ valid_options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(valid_options)
 print("COMPUTER CHOICE: ",computer_choice)
 
+
+# Homework - Add validation for who won
+# Homework - Customize the player's name
 
 
 print("THIS IS THE END OF THE GAME. PLEASE PLAY AGAIN.")
