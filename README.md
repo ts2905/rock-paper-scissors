@@ -1,14 +1,16 @@
 # rock-paper-scissors
 
-# DESCRIPTION
-# This game allows the user to play Rock, Paper, Scissors against a computer.
-# The computer will randomly select a move by utilizing the 'random' module.
+# Description
+  + This game allows the user to play Rock, Paper, Scissors against a computer.
+  + The computer will randomly select a move by utilizing the 'random' module.
 
 
-# MODULES NEEDED
+# Modules Needed
 import random
+import os
+import dotenv
 
-# PREREQUISITES
+# Prerequisites
 
   + Anaconda 3.7+
   + Python 3.7+
@@ -21,17 +23,17 @@ import random
 ## Installation
 
 1. Fork this [remote repository](https://github.com/ts2905/rock-paper-scissors) under your own control, then "clone" or download your remote copy onto your local computer.
-2. Navigate there from the command line (subsequent commands assume you are running them from the local repository's root directory):
+2. Navigate to the repository using Git Bash or your preferred shell:
 
 ```sh
-cd my-first-python-app
+cd rock-paper-scissors
 ```
 
-3. Use Anaconda to create and activate a new virtual environment, perhaps called "my-first-env":
+3. Use Anaconda to create and activate a new virtual environment, perhaps called "rps-env":
 
 ```sh
-conda create -n my-first-env python=3.8
-conda activate my-first-env
+conda create -n rps-env python=3.8
+conda activate rps-env
 ```
 
 4. After activating the virtual environment, install package dependencies (see the ["requirements.txt"](/requirements.txt) file):
