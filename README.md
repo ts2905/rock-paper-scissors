@@ -1,24 +1,20 @@
 # rock-paper-scissors
+'''PLEASE NOTE - Some of the code below was adapted from the README.md from the my-first-repo exercise
+'''
 
 # Description
   + This game allows the user to play Rock, Paper, Scissors against a computer.
   + The computer will randomly select a move by utilizing the 'random' module.
 
-
 # Modules Needed
-import random
-import os
-import dotenv
+  + import random
+  + import os
+  + import dotenv
 
 # Prerequisites
-
   + Anaconda 3.7+
   + Python 3.7+
   + Pip
-
-
-'''PLEASE NOTE - Some of the code below was adapted from the README.md from the my-first-repo exercise
-'''
 
 ## Installation
 
