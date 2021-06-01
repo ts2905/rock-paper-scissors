@@ -1,15 +1,22 @@
 # game.py
 
 import random
+import os
+import dotenv
+
+dotenv.load_dotenv()
+
+player_name = os.getenv("player_name")
+print(player_name)
 
 #Greeting. Assign user name. Assign user's move/choice to variable
 print("Rock, Paper, Scissors, Shoot!")
-user_name = input("What's your name?: ")
-user_choice = input("Please choose one of 'rock', 'paper', 'scissors': ")
+
+user_choice = input("Please choose one of 'rock', 'paper', 'scissors':")
 print("")
 
 #print(user_choice)
-print(user_name,"'s choice: ",user_choice)
+print(player_name +"'s choice:",user_choice)
 print("")
 
 #if user_choice == "rock" or "paper" or "scissors":
@@ -24,24 +31,24 @@ else:
 valid_options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(valid_options)
 print("")
-print("Computer's choice: ",computer_choice)
+print("Computer's choice: " + computer_choice)
 print("")
 
 # Homework - Added validation for who won the game
 if (user_choice == computer_choice):
-    print(user_name,", you TIED the computer - try again.")
+    print(player_name + ", you TIED the computer - try again.")
     print("")
     print("THIS IS THE END OF THE GAME. FEEL FREE TO PLAY AGAIN.")    
     exit()
 
 if (user_choice == "rock" and computer_choice == "scissors") or (user_choice == "paper" and computer_choice == "rock") or (user_choice == "scissors" and computer_choice == "paper"):
-    print("You WON,", user_name,", congratulations!!!")
+    print("You WON, " + player_name + ", congratulations!!!")
     print("")
     print("THIS IS THE END OF THE GAME. FEEL FREE TO PLAY AGAIN.")    
     exit()
 
 else:
-    print("You LOST - sorry ", user_name,".")
+    print("You LOST - sorry " + player_name + ".")
     print("")
     print("THIS IS THE END OF THE GAME. FEEL FREE TO PLAY AGAIN.")
     exit()
